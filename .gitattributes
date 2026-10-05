@@ -1,0 +1,11 @@
+# GitHub Linguist language detection overrides
+# Exclude agent skills, prompt helpers, scripts, and vendored data from language statistics
+.agents/** linguist-vendored
+.agents/** -linguist-detectable
+*.py -linguist-detectable
+*.csv -linguist-detectable
+*.json -linguist-detectable
+
+# Explicitly ensure project source code is detected
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
